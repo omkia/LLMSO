@@ -1,0 +1,27 @@
+{
+  "valuation_net_vote": [
+    {"term": "post_x_ici", "printed": -0.153, "printed_se": 0.036, "printed_p": 0.00002, "printed_bonferroni_12": 0.00024},
+    {"term": "post_x_eci", "printed": 0.228, "printed_se": 0.041},
+    {"term": "post_x_asi_x_ici", "printed": -0.139, "printed_se": 0.045, "printed_p": 0.0020, "printed_bonferroni_12": 0.024},
+    {"term": "post_x_asi_x_eci", "printed": 0.176, "printed_se": 0.052, "printed_p": 0.00071, "printed_bonferroni_12": 0.0086}
+  ],
+  "valuation_trim_top1": [
+    {"term": "post_x_ici", "printed": -0.141, "printed_se": 0.038},
+    {"term": "post_x_eci", "printed": 0.215, "printed_se": 0.043},
+    {"term": "post_x_asi_x_ici", "printed": -0.125, "printed_se": 0.048},
+    {"term": "post_x_asi_x_eci", "printed": 0.162, "printed_se": 0.055}
+  ],
+  "valuation_ordered_logit": [
+    {"term": "post_x_ici", "printed": -0.412, "printed_se": 0.098},
+    {"term": "post_x_eci", "printed": 0.615, "printed_se": 0.110},
+    {"term": "post_x_asi_x_ici", "printed": -0.380, "printed_se": 0.125},
+    {"term": "post_x_asi_x_eci", "printed": 0.475, "printed_se": 0.140}
+  ],
+  "supply_adjusted_net_vote": [
+    {"term": "post_x_ici", "printed": -0.077, "printed_se": 0.038, "printed_p": 0.043}
+  ],
+  "baseline_net_vote": [
+    {"term": "asi", "printed": 0.132, "printed_se": 0.033},
+    {"term": "post_x_asi", "printed": -0.251, "printed_se": 0.039}
+  ]
+}

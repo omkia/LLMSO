@@ -1,0 +1,26 @@
+{
+  "ici_eci": {
+    "model_name": null,
+    "learning_rate": null,
+    "num_epochs": null,
+    "batch_size": null,
+    "seed": null,
+    "positive_if_mean_ge": null
+  },
+  "asi": {
+    "learner": null,
+    "n_estimators": null,
+    "learning_rate": null,
+    "max_depth": null,
+    "seed": null
+  },
+  "detector": {
+    "model_name": "microsoft/deberta-v3-large",
+    "transformers_version": "4.38.1",
+    "learning_rate": null,
+    "num_epochs": null,
+    "batch_size": null,
+    "seed": null,
+    "decision_threshold": 0.72
+  }
+}

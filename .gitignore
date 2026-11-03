@@ -1,0 +1,7 @@
+__pycache__/
+outputs/
+*.npz
+hparams.json
+id_salt.txt
+replication_sample/replication_sample.csv
+replication_sample/stratum_manifest.csv

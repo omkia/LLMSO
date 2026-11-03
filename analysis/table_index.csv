@@ -1,0 +1,32 @@
+compiled_order,manuscript_label,produced_by
+1,tab:sampleflow,preprocessing/run_pipeline.py
+2,tab:sampleledger,preprocessing/run_pipeline.py
+3,tab:sensitivitysamples,analysis/run_tables.py
+4,tab:detectorperf,models/detector_metrics.py
+5,tab:notation,definitional; not estimated
+6,tab:constructs,definitional; not estimated
+7,tab:measurement,annotation/cfa_three_factor.R
+8,tab:codinganchors,annotation/codebook.md
+9,tab:secular_control,month fixed effects absorb Post; see analysis/ESTIMATOR.txt
+10,tab:twoevent,analysis/run_tables.py
+11,tab:prewindow,analysis/run_tables.py
+12,tab:timeplacebo,analysis/run_tables.py
+13,tab:lowcopilot,analysis/run_tables.py when a language list is supplied
+14,tab:tagslope,analysis/run_tables.py
+15,tab:pvalues,computed from the estimated covariance
+16,tab:family12,Bonferroni from the estimated p-values
+17,tab:diagnostics,partial; RESET and CR2 df are not re-derived here
+18,tab:vif,analysis/run_tables.py
+19,tab:modelasi,requires the 600-question expert file
+20,tab:descriptives,analysis/run_tables.py
+21,tab:baseline,analysis/run_tables.py
+22,tab:epistemic,analysis/run_tables.py
+23,tab:attrition,analysis/adaptation.py
+24,tab:ipw,requires the attrition-model weights
+25,tab:adaptation,analysis/adaptation.py
+26,tab:hsummary,assembled from the estimated coefficients
+27,tab:placebo,requires a pre-period edit-volume outcome
+28,tab:supply,analysis/run_tables.py
+29,tab:exitbounds,analysis/adaptation.py
+30,tab:outcomerobust,analysis/run_tables.py
+31,tab:deleted,analysis/deleted_scenarios.py hypothetical bounds; not a regression fit

@@ -1,0 +1,31 @@
+variable,level,role
+answer_id,answer,salted hash
+question_id,question,salted hash
+user_id,contributor,salted hash
+answer_creation_date,answer,timestamp
+answer_month,answer,calendar month
+net_vote,answer,upvotes minus downvotes
+accepted,answer,binary
+comment_count,answer,count
+ici,answer,informational index on [0,1]
+eci,answer,epistemic index on [0,1]
+asi,question,AI answerability on [0,1]
+complexity,question,factor score on [0,1]
+volatility,tag-month,factor score
+reputation_pre,contributor,reputation on 30 November 2022
+status_pre,contributor,z of log(1+reputation_pre)
+primary_tag,question,first tag in the dump tag string
+tags,question,tag string
+n_tags,question,tag count
+question_creation_date,question,timestamp
+duplicate_link,question,community duplicate closure
+community_wiki,answer,binary
+self_answer,answer,binary
+ai_flagged,answer,detector probability at least 0.72
+answer_length,answer,characters after markup is stripped
+flesch_kincaid,answer,grade level
+code_ratio,answer,share of characters inside code or pre
+formatting_score,answer,share of characters inside code lists quotes or headings
+sampling_weight,answer,source stratum size divided by sampled stratum size
+future_edits,answer,only if the author supplies the horizon they used
+survival,answer,only if the author supplies the coding rule they used
