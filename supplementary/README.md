@@ -8,7 +8,8 @@ analyses. Empirical values match the manuscript.
 
 Hosted with the replication package at:
 
-https://github.com/omkia/LLMSO/blob/kia/supplementary/online_appendix.tex
+Online appendix source: `online_appendix.tex` (this folder).
+Public mirror (not for anonymized review PDF): repository URL is listed only on the title page for double-anonymized submission.
 
 ## Relation to the replication code
 
