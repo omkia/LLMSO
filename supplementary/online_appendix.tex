@@ -1,3 +1,108 @@
+% Additional tables relocated from the main manuscript for length.
+\section{Additional main-text tables}
+\label{app:main_tables}
+
+Table~\ref{tab:descriptives} reports answer-level descriptive statistics.
+Table~\ref{tab:baseline} reports baseline Post$\times$ASI associations.
+Table~\ref{tab:ftests} reports joint event-study $F$-tests.
+Table~\ref{tab:hsummary} summarizes primary and secondary tests.
+
+\begin{table*}[t]
+\centering
+\caption{Descriptive statistics (answer-level sample, $N = 4{,}215{,}082$)}
+\label{tab:descriptives}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lcccccccc}
+\toprule
+Variable & $N$ & Mean & SD & P25 & Median & P75 & Min & Max \\
+\midrule
+Net vote score & 4,215,082 & 3.14 & 8.42 & 0 & 1 & 4 & $-12$ & 1,405 \\
+Accepted answer (binary) & 4,215,082 & 0.42 & 0.49 & 0 & 0 & 1 & 0 & 1 \\
+Answer comments & 4,215,082 & 1.85 & 3.21 & 0 & 1 & 2 & 0 & 84 \\
+Informational index ($\mathrm{ICI}_a$) & 4,215,082 & 0.64 & 0.22 & 0.48 & 0.65 & 0.82 & 0 & 1 \\
+Epistemic index ($\mathrm{ECI}_a$) & 4,215,082 & 0.38 & 0.25 & 0.18 & 0.34 & 0.55 & 0 & 1 \\
+AI answerability ($\mathrm{ASI}_q$) & 1,842,110 & 0.55 & 0.28 & 0.32 & 0.56 & 0.78 & 0 & 1 \\
+Complexity & 1,842,110 & 0.41 & 0.30 & 0.15 & 0.38 & 0.62 & 0 & 1 \\
+Pre-event reputation (raw source variable) & 354,209 & 4,520 & 12,450 & 15 & 410 & 3,850 & 1 & 1.2M \\
+Tag volatility & 14,502 & 0.22 & 0.18 & 0.08 & 0.19 & 0.31 & 0 & 0.88 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\caption{Joint $F$-tests for event-study dynamics and pre-trends}
+\label{tab:ftests}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llccc}
+\toprule
+Test & Coefficients tested & Num.\ df & $F$ & $p$ \\
+\midrule
+Local pre-trend leads & $k=-6$ to $-2$ & 5 & 0.86 & 0.51 \\
+Code-LLM leads & $k^{C}=-6$ to $-1$ & 6 & 0.71 & 0.64 \\
+Code-LLM lags & $k^{C}=0$ to $+5$ & 6 & 1.27 & 0.27 \\
+Eight pre-window bins & Table~\ref{tab:prewindow} & 8 & 1.14 & 0.33 \\
+Post-arrival months & $k=0$ to $+12$ & 13 & 4.38 & $<$0.001 \\
+\bottomrule
+\multicolumn{5}{@{}p{\textwidth}@{}}{\scriptsize Joint $F$-tests evaluate
+the indicated event-study bins. Each row names the coefficients in the
+contrast. The plotted window and the tested window are not the same.
+$p$-values are computed using cluster-robust standard errors.}
+\end{tabular}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\caption{Primary tests and bounded extensions}
+\label{tab:hsummary}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{0.06\textwidth}p{0.25\textwidth}p{0.18\textwidth}p{0.10\textwidth}p{0.28\textwidth}}
+\toprule
+Test & Prediction & Estimate (95\% CI) & Raw $p$ & Evidentiary status \\
+\midrule
+H1 & Informational relative value declines & $-0.153$ $[-0.224,-0.082]$ & 0.00002 & Core; Bonferroni(12) $p=0.00024$ \\
+H2 & Epistemic relative value rises & $0.228$ $[0.148,0.308]$ & $<$0.0001 & Core; remains below $0.05$ under Bonferroni(12) \\
+H3 & Informational association more negative at high ASI & $-0.139$ $[-0.227,-0.051]$ & 0.0020 & Core; Bonferroni(12) $p=0.024$ \\
+H4 & Epistemic association more positive at high ASI & $0.176$ $[0.074,0.278]$ & 0.00071 & Core; Bonferroni(12) $p=0.0086$ \\
+H5 & Higher-status users shift toward epistemic work & $0.058$ $[0.034,0.082]$ & $<$0.0001 & Secondary; continuing contributors \\
+H6 & Epistemic premium stronger under volatility & $0.079$ $[0.006,0.152]$ & 0.034 & Exploratory; Bonferroni(8) $p=0.272$ \\
+H7 & Higher-status users shift toward lower-ASI questions & $-0.082$ $[-0.119,-0.045]$ & $<$0.0001 & Secondary; continuing contributors \\
+\bottomrule
+\multicolumn{5}{@{}p{\textwidth}@{}}{\scriptsize H1--H4 raw $p$-values are two-sided normal probabilities for the printed coefficient divided by its standard error. H1 is reported as $0.00002$ from $t=-4.25$.}
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{Baseline differential post-period associations by AI answerability}
+\label{tab:baseline}
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+& (1) Net vote score (OLS) & (2) Acceptance & (3) Future edits & (4) Survival \\
+\midrule
+$\mathrm{Post}_t$ & Absorbed & Absorbed & Absorbed & Absorbed \\
+$\mathrm{ASI}_q$ & $0.132^{***}$ & $0.032^{*}$ & $0.088^{***}$ & $0.105^{***}$ \\
+& (0.033) & (0.014) & (0.021) & (0.028) \\
+$\mathrm{Post}_t\times \mathrm{ASI}_q$ & $-0.251^{***}$ & $-0.052^{**}$ & $-0.135^{***}$ & $-0.188^{***}$ \\
+& (0.039) & (0.018) & (0.033) & (0.042) \\
+Controls/FEs & Yes & Yes & Yes & Yes \\
+Observations & 4,215,082 & 4,215,082 & 4,215,082 & 4,215,082 \\
+$R^2$ / Pseudo $R^2$ & 0.109 & 0.084 & 0.095 & 0.108 \\
+\bottomrule
+\multicolumn{5}{@{}p{\textwidth}@{}}{\scriptsize Note: In answer-level
+rows, $q=q(a)$. Standard errors are clustered at the tag level.
+Post is absorbed by the saturated month fixed effects and is not
+separately identified in columns that include month fixed effects.
+The interaction terms remain identified as post-period slope
+differences relative to the pre-period.
+$^{*}p<0.05$, $^{**}p<0.01$, $^{***}p<0.001$.}
+\end{tabular}
+\end{table*}
+
 % Online appendix / supplementary tables for IJIMDI submission.
 % Extracted verbatim from the original manuscript; empirical values unchanged.
 % Included from the main manuscript via \input{supplementary/online_appendix}.

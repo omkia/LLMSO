@@ -2,20 +2,17 @@
 
 ## `online_appendix.tex`
 
-Tables and technical detail relocated from the main manuscript for IJIMDI
-submission. Empirical values are copied verbatim from the original manuscript.
-The main file includes this fragment via `\input{supplementary/online_appendix}`.
+Online appendix for the IJIMDI manuscript: relocated tables, detector
+protocol, identification/robustness checks, diagnostics, and sensitivity
+analyses. Empirical values match the manuscript.
 
-## Relation to `code2/`
+Hosted with the replication package at:
 
-Implementation-level preprocessing, classifier training, and estimation scripts
-remain in `../code2/`. The appendix does not replace the replication package.
-Essential methodological information needed to evaluate the study remains in
-the main manuscript; the appendix preserves supporting tables and extended
-procedures.
+https://github.com/omkia/LLMSO/blob/kia/supplementary/online_appendix.tex
 
-## Main-text tables retained
+## Relation to the replication code
 
-- `tab:sampleflow`, `tab:constructs`, `tab:measurement`
-- `tab:descriptives`, `tab:baseline`, `tab:ftests`
-- `tab:epistemic`, `tab:adaptation`, `tab:hsummary`
+Implementation-level preprocessing, classifier training, and estimation
+scripts remain in this repository. The appendix does not replace the
+replication package; it preserves supporting tables and extended procedures
+referenced from the main manuscript.
